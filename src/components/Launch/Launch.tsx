@@ -6,15 +6,15 @@ interface Props {
 }
 const Launch: React.FC<Props> = ({ data }) => {
   return (
-    <div className="Launches">
+    <div className="LaunchList">
       <h3>All Space X Launches</h3>
-      <ol className="LaunchesOL">
+      <ol className="LaunchList__list">
         {!!data.launches &&
           data.launches.map(
             (launch, i) =>
               !!launch && (
-                <li key={i} className="LaunchesItem">
-                  {launch.mission_name}-{launch.launch_year}({launch.launch_success})
+                <li key={i} className="LaunchList__item">
+                  {launch.mission_name}-{launch.launch_year}({JSON.stringify(launch.launch_success)})
                 </li>
               )
           )}

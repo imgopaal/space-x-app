@@ -4,7 +4,7 @@ import LaunchDetails from "./LaunchDetails";
 
 const LaunchDetailsContainer = () => {
   const { data, error, loading } = useLaunchInfoQuery({
-    variables: { id: "13" },
+    variables: { id: "15" },
   });
   if (loading) {
     return <div>Data is loading</div>;
