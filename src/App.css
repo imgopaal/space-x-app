@@ -1,6 +1,29 @@
 .App {
   display: flex;
+  /* flex-direction: column; */
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+.nav {
+  color: rgb(13, 13, 31);
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  /* justify-content: space-between; */
+  background-color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 768px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

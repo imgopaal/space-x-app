@@ -5,9 +5,12 @@
     width: 300px;
     padding-left: 20px;
     padding-right: 20px;
+    background-color: rgb(13, 13, 31);
+    
   }
   
   .LaunchList__list {
+    background-color: rgb(13, 13, 31);
     /* list-style: none; */
     margin: 0 0 0 20px;
     padding: 0;
@@ -19,4 +22,11 @@
     border-top: 1px solid #919191;
     cursor: pointer;
 
+  }
+  @media screen and (max-width: 768px) {
+  
+    .LaunchList{
+      width: 80%;
+    }
+      
   }

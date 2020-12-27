@@ -1,15 +1,15 @@
 import React from "react";
-import Launch from "./Launch";
-import { useLaunchesQuery } from '../../generated/graphql';
+import Launch, { OwnProps } from "./Launch";
+import { useLaunchesQuery } from "../../generated/graphql";
 
-const LaunchContainer = () => {
+const LaunchContainer = (props: OwnProps) => {
   const { data, error, loading } = useLaunchesQuery();
   if (loading) {
     return <div>Data is Loading</div>;
   }
-  if (error || !data) {
-    return <div>There was an error</div>;
+  else if(error||!data){
+    return<div>Click Any Mission For It's Details</div>
   }
-  return <Launch data={data} />;
+  return <Launch data={data} {...props}/>;
 };
 export default LaunchContainer;
