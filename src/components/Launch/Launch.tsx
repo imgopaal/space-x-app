@@ -14,7 +14,13 @@ const Launch: React.FC<Props> = ({ data }) => {
             (launch, i) =>
               !!launch && (
                 <li key={i} className="LaunchList__item">
-                  {launch.mission_name}-{launch.launch_year}({JSON.stringify(launch.launch_success)})
+                  {launch.mission_name}- ({launch.launch_year})
+                  <br />
+                  {launch.launch_success ? (
+                    <span style={{ color: "green" }}>SUCCESSFULL</span>
+                  ) : (
+                    <span style={{ color: "red" }}>FAILED</span>
+                  )}
                 </li>
               )
           )}

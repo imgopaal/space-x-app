@@ -15,6 +15,6 @@ const LaunchDetailsContainer = () => {
   if (!data) {
     return <div>Please select any mission for it's details</div>;
   }
-  return <LaunchDetails data={data}/>
+  return <LaunchDetails data={data} />;
 };
 export default LaunchDetailsContainer;

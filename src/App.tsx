@@ -3,7 +3,7 @@ import './App.css'
 import Launch from "./components/Launch";
 import LaunchDetails from "./components/LaunchDetails";
 
-function App() {
+function Home() {
   return (
     <div className="App">
       <Launch />
@@ -12,4 +12,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

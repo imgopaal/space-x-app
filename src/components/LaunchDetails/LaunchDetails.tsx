@@ -13,7 +13,7 @@ const LaunchDetails: React.FC<Props> = ({ data }) => {
   return (
     <div className="LaunchProfile">
       <div className="LaunchProfile__status">
-        <span>Flight{data.launch.flight_number}:</span>
+        <span>Flight: <b>{data.launch.flight_number}</b></span>
       </div>
       <h1 className="LaunchProfile__title">
         {data.launch.mission_name}-{data.launch.rocket?.rocket_name}
