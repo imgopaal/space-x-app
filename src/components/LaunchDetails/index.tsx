@@ -16,7 +16,7 @@ const LaunchDetailsContainer = ({ id }: OwnProps) => {
   if (loading) {
     return (
       <div >
-        <img style={{width:'140px'}} src={load} alt=""/>
+        <img style={{width:'80px'}} src={load} alt=""/>
           
       </div>
     );

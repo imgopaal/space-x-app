@@ -3,7 +3,7 @@ import "./App.css";
 import Launch from "./components/Launch";
 import LaunchDetails from "./components/LaunchDetails";
 
-function App() {
+const App = () => {
   const [id, setId] = useState(0);
   const handleIdChange = useCallback((newId) => {
     setId(newId);
@@ -32,6 +32,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

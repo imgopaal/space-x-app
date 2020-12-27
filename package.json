@@ -8,8 +8,9 @@
     "@testing-library/user-event": "^12.1.10",
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
-    "@types/react": "^16.9.53",
+    "@types/react": "^16.14.2",
     "@types/react-dom": "^16.9.8",
+    "enzyme": "^3.11.0",
     "graphql": "^15.4.0",
     "graphql-tag": "^2.11.0",
     "react": "^17.0.1",
@@ -48,6 +49,7 @@
     "@graphql-codegen/cli": "1.20.0",
     "@graphql-codegen/typescript": "1.19.0",
     "@graphql-codegen/typescript-operations": "^1.17.13",
-    "@graphql-codegen/typescript-react-apollo": "2.2.1"
+    "@graphql-codegen/typescript-react-apollo": "2.2.1",
+    "@types/enzyme": "^3.10.8"
   }
 }
